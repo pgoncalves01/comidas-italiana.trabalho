@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Italiana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+        header {
+            background-color: #E64A19;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        h2 {
+            color: #E64A19;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 10px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+        img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #E64A19;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            align-self: flex-start;
+        }
+        button:hover {
+            background-color: #FF5722;
+        }
+        footer {
+            background-color: #E64A19;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Comida Italiana</h1>
+    </header>
+
+    <section>
+        <h2>Pratos Típicos</h2>
+        <form id="pratos-form">
+            <label>
+                <img src="pizza.jpg" alt="Pizza">
+                <input type="checkbox" id="pizza" name="prato" value="Pizza">
+                Pizza
+            </label><br>
+            <label>
+                <img src="pasta.jpg" alt="Pasta">
+                <input type="checkbox" id="pasta" name="prato" value="Pasta">
+                Pasta
+            </label><br>
+            <label>
+                <img src="risoto.jpg" alt="Risoto">
+                <input type="checkbox" id="risoto" name="prato" value="Risoto">
+                Risoto
+            </label><br>
+            <label>
+                <img src="lasanha.jpg" alt="Lasanha">
+                <input type="checkbox" id="lasanha" name="prato" value="Lasanha">
+                Lasanha
+            </label><br>
+            <label>
+                <img src="gnocchi.jpg" alt="Gnocchi">
+                <input type="checkbox" id="gnocchi" name="prato" value="Gnocchi">
+                Gnocchi
+            </label><br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Comida Italiana. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
